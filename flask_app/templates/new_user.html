@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="width: 60%; margin: auto; padding: 30px; background-color: antiquewhite;" >
+    <h1>Enter Info Below:</h1>
+    <form action="/add_user" method="post">
+        <div class="input-group mb-3" style="padding: 20px">
+            <span class="input-group-text" id="basic-addon1">First Name</span>
+            <input type="text" class="form-control"name="first_name" id="first_name">
+        </div>
+        <div class="input-group mb-3" style="padding: 20px">
+            <span class="input-group-text" id="basic-addon1">Last Name</span>
+            <input type="text" class="form-control"name="last_name" id="last_name">
+        </div>
+        <div class="input-group mb-3" style="padding: 20px">
+            <span class="input-group-text" id="basic-addon1">Email</span>
+            <input type="text" class="form-control"name="email" id="email">
+        </div>
+        <input type="submit" class="btn btn-dark">
+        <a href="/users" class="btn btn-light">See All Users</a>
+    </form>
+</body>
+</html>
